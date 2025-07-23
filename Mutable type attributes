@@ -1,0 +1,20 @@
+'''Mutable type attribute
+code to illustrate multiple attributes by calling a class for its specification
+for example n=21,32,43,54,65
+even list:[32,54]
+odd lit:[21,43,65]'''
+class number:
+    evens=[]
+    odds=[]
+    def __init__(self,num):
+        self.num=num
+        if num%2==0:
+            number.evens.append(num)
+        else:
+            number.odds.append(num)
+n= int(input("Enter Elements:"))
+for i in range(n):
+    num = int(input(f"Enter number {i+1}: "))
+    number(num) 
+print("Even Mutable list:",number.evens)
+print("Odd Mutable list:",number.odds)
